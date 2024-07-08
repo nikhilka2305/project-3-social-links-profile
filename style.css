@@ -1,0 +1,88 @@
+@font-face {
+	font-family: "Inter";
+	src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+	--bg-primary-off-black: hsl(0, 0%, 8%);
+	--bg-secondary-dark-grey: hsl(0, 0%, 12%);
+	--bg-tertiary-grey: hsl(0, 0%, 20%);
+	--fg-primary-white: hsl(0, 0%, 100%);
+	--fg-secondary-green: hsl(75, 94%, 57%);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-primary-off-black);
+	color: var(--fg-primary-white);
+	font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-profile-card {
+	margin: 6em auto 2em;
+	padding: 1em 1.5em 0.5em;
+	width: 90%;
+	max-width: 350px;
+	border: none;
+	border-radius: 12px;
+	background-color: var(--bg-secondary-dark-grey);
+	text-align: center;
+}
+
+.personal-info {
+	margin: 1em 1em;
+}
+
+.avatar-container img {
+	width: 7em;
+	border-radius: 50%;
+}
+
+.personal-info h1 {
+	margin: 1em 0 0 0;
+	font-size: 1.5em;
+}
+
+.location-text {
+	margin: 0.5em 0 1em;
+	color: var(--fg-secondary-green);
+	font-weight: 500;
+	font-size: 0.9em;
+}
+
+.bio-text {
+	margin: 2em 0 0.5em;
+	font-size: 0.88em;
+}
+
+.social-profile-button-list {
+	margin: 1.5em 0 0em;
+}
+
+.social-profile-buttons {
+	all: unset;
+	display: block;
+	width: 100%;
+	background-color: var(--bg-tertiary-grey);
+	margin: 1em 0;
+	font-size: 0.9em;
+	font-weight: 800;
+	padding: 1em 0;
+	border-radius: 8px;
+}
+
+.social-profile-buttons:hover,
+.social-profile-buttons:focus {
+	background-color: var(--fg-secondary-green);
+	color: var(--bg-primary-off-black);
+}
+
+@media (min-width: 500px) {
+	.social-profile-card {
+		margin-top: 8em;
+	}
+}
